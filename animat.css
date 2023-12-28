@@ -1,0 +1,49 @@
+.container{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: red;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    position: relative;
+    background-color: aqua;
+    animation: raju 2s linear 0s infinite normal;
+}
+/* @keyframes raju {
+    from{
+        transform: scaleX(10);
+    }
+    to{
+
+    }
+} */
+@keyframes raju {
+    0%{
+            background-color: red;
+            top: 0;
+            left: 0;
+    }
+    25%{
+            background-color: aqua;
+            top: 200px;
+            left: 0;
+    }
+    50%{
+        background-color: blue;
+        top:200px;
+        left: 200px;
+    }
+    75%{
+        background-color: orchid;
+        top:0;
+        left: 200px;
+    }
+    100%{
+top: 0px;
+left: 0px;
+        background-color: orange;
+    }
+}
